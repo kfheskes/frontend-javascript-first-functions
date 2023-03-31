@@ -18,7 +18,7 @@ console.log(result);
 // greeter("Kees") geeft "Hoi Kees!"
 
 function greeter(naam){
-  console.log ('Hoi' + naam + '!');
+  console.log ('Hoi ' + naam + '!');
 }
 
 greeter('Jan');
@@ -31,6 +31,14 @@ greeter('Kees');
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
 
+function minutesToSeconds (x){
+  return x * 60;
+}
+
+const minuut = minutesToSeconds(1 * 3)
+console.log(minuut)
+
+
 
 
 /* Opdracht 3 */
@@ -38,10 +46,15 @@ greeter('Kees');
 // Let op: je mag hier geen String methoden voor gebruiken zoals concat().
 // ---- Verwachte uitkomsten:
 // merge("abra", "cadabra") geeft "abracadabra"
-// merge("zoet", "sappig") geeft "zoetsappig"
+// merge("zoet", "sappig") geeft "zoetsappig"c
 
 
+function merge(a, b){
+ return a + b;
+}
 
+console.log(merge ('abra', 'cadabra'));
+console.log(merge ('zoet', 'sappig'))
 
 /* Opdracht  4 */
 // Schrijf een functie genaamd calculateDogYears die de hondenleeftijd verwacht en dit omrekent naar mensenjaren (1 tot 7). Op basis daarvan wordt een zinnetje teruggegeven.
@@ -49,6 +62,11 @@ greeter('Kees');
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
+function calculateDogYears(humanAge) {
+    return humanAge * 7 ;
+}
+
+console.log(calculateDogYears(8))
 
 
 /* Opdracht 5 */
