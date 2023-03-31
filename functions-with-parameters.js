@@ -62,11 +62,12 @@ console.log(merge ('zoet', 'sappig'))
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
 
-function calculateDogYears(humanAge) {
-    return humanAge * 7 ;
+function calculateDogYears(dogAge) {
+    return dogAge * 7;
 }
+const dogHumanAge = 'Jouw hond is ' +  calculateDogYears(7) + ' jaar oud in mensenjaren.'
 
-console.log(calculateDogYears(8))
+console.log(dogHumanAge)
 
 
 /* Opdracht 5 */
@@ -77,7 +78,13 @@ console.log(calculateDogYears(8))
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
 
+function wrapper ( karakter, woord) {
+    return karakter + woord + karakter;
+}
 
+console.log(wrapper('*','bril'));
+console.log(wrapper('_', 'beep'));
+console.log(wrapper('Q', 'kaas'));
 
 /* Bonus opdracht  */
 // Schrijf een functie genaamd createDetailString, die een object met de properties firstName, lastName en profession verwacht en een zin teruggeeft
